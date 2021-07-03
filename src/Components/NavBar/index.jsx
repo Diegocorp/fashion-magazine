@@ -1,9 +1,9 @@
 import React from "react";
-import { TopBarStyles } from "./TopBarElements";
+import { NavBarStyles } from "./NavBarElements";
 
-export function TopBar() {
+export function NavBar() {
   return (
-    <TopBarStyles>
+    <NavBarStyles>
       <div className="topLeft">
         <i className="topIcon fab fa-twitter-square"></i>
         <i className="topIcon fab fa-facebook-square"></i>
@@ -23,6 +23,6 @@ export function TopBar() {
         <img className="topImage" src="https://i.imgur.com/uNDnfqi.jpg"></img>
         <i className="topSearchIcon fas fa-search"></i>
       </div>
-    </TopBarStyles>
+    </NavBarStyles>
   );
 }

@@ -1,3 +1,7 @@
 import styled from "styled-components";
 
-export const HomeStyles = styled.div``;
+export const HomeStyles = styled.div`
+  .home {
+    display: flex;
+  }
+`;

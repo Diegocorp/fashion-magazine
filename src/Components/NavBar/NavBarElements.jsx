@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const TopBarStyles = styled.div`
+export const NavBarStyles = styled.div`
   width: 100%;
   height: 50px;
   background-color: white;
@@ -23,15 +23,15 @@ export const TopBarStyles = styled.div`
   }
 
   .topIcon {
-    font-size: 20px;
+    font-size: 28px;
     margin-right: 10px;
     color: #444;
     cursor: pointer;
   }
 
   .topImage {
-    width: 40px;
-    height: 40px;
+    width: 45px;
+    height: 45px;
     border-radius: 50%;
     object-fit: cover;
   }
@@ -46,13 +46,13 @@ export const TopBarStyles = styled.div`
 
   .topListItem {
     margin-right: 20px;
-    font-size: 18px;
+    font-size: 28px;
     font-weight: 300;
     cursor: pointer;
   }
 
   .topSearchIcon {
-    font-size: 18px;
+    font-size: 25px;
     color: #666;
     cursor: pointer;
     margin-left: 15px;
