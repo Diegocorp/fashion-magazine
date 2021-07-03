@@ -12,11 +12,11 @@ export function NavBar() {
       </div>
       <div className="topCenter">
         <ul className="topList">
-          <li className="topListItem">Home</li>
-          <li className="topListItem">Abaout</li>
-          <li className="topListItem">Contact</li>
-          <li className="topListItem">Write</li>
-          <li className="topListItem">Log Out</li>
+          <li className="topListItem">HOME</li>
+          <li className="topListItem">ABOUT</li>
+          <li className="topListItem">CONTACT</li>
+          <li className="topListItem">WRITE</li>
+          <li className="topListItem">LOGOUT</li>
         </ul>
       </div>
       <div className="topRight">
