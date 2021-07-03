@@ -9,6 +9,7 @@ export const NavBarStyles = styled.div`
   display: flex;
   align-items: center;
   font-family: "Josefin Sans", sans-serif;
+  z-index: 999;
 
   .topLeft,
   .topRight {
