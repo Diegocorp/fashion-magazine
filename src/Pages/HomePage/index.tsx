@@ -2,16 +2,16 @@ import React from "react";
 import Header from "../../Components/Header";
 import Posts from "../../Components/Posts";
 import SideColumn from "../../Components/SideColumn";
-import { HomeStyles } from "./HomeElements";
+import { HomePageStyles } from "./HomePageElements";
 
-export default function Home() {
+export default function HomePage() {
   return (
-    <HomeStyles>
+    <HomePageStyles>
       <Header />
       <div className="home">
         <Posts />
         <SideColumn />
       </div>
-    </HomeStyles>
+    </HomePageStyles>
   );
 }
