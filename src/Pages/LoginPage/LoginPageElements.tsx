@@ -5,6 +5,7 @@ export const LoginPageStyles = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+  font-size: 20px;
   justify-content: center;
   background: linear-gradient(
       rgba(255, 255, 255, 0.5),
@@ -14,11 +15,12 @@ export const LoginPageStyles = styled.div`
   background-size: cover;
 
   .loginTitle {
-    font-size: 50px;
+    font-size: 80px;
   }
 
   .loginForm {
     margin-top: 20px;
+    width: 300px;
     display: flex;
     flex-direction: column;
 
@@ -42,6 +44,7 @@ export const LoginPageStyles = styled.div`
     cursor: pointer;
     background-color: lightcoral;
     color: white;
+    font-size: 20px;
     padding: 10px;
     border: none;
     border-radius: 10px;
@@ -54,6 +57,8 @@ export const LoginPageStyles = styled.div`
     right: 20px;
     background-color: teal;
     cursor: pointer;
+    font-size: 20px;
+    width: 90px;
     padding: 10px;
     border: none;
     color: white;

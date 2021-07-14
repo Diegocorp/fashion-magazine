@@ -47,7 +47,7 @@ export const NavBarStyles = styled.div`
 
   .topListItem {
     margin-right: 20px;
-    font-size: 28px;
+    font-size: 25px;
     font-weight: 300;
     cursor: pointer;
   }

@@ -4,6 +4,7 @@ export const RegisterPageStyles = styled.div`
   height: calc(100vh - 50px);
   display: flex;
   flex-direction: column;
+  font-size: 20px;
   align-items: center;
   justify-content: center;
   background: linear-gradient(
@@ -14,11 +15,12 @@ export const RegisterPageStyles = styled.div`
   background-size: cover;
 
   .registerTitle {
-    font-size: 50px;
+    font-size: 80px;
   }
 
   .registerForm {
     margin-top: 20px;
+    width: 300px;
     display: flex;
     flex-direction: column;
 
@@ -44,6 +46,7 @@ export const RegisterPageStyles = styled.div`
     color: white;
     padding: 10px;
     border: none;
+    font-size: 20px;
     border-radius: 10px;
     text-align: center;
   }
@@ -55,6 +58,8 @@ export const RegisterPageStyles = styled.div`
     background-color: lightcoral;
     cursor: pointer;
     padding: 10px;
+    font-size: 20px;
+    width: 90px;
     border: none;
     color: white;
     border-radius: 10px;

@@ -1,10 +1,11 @@
 import React from "react";
 import { RegisterPageStyles } from "./RegisterPageElements";
+import { Link } from "react-router-dom";
 
 export default function RegisterPage() {
   return (
     <RegisterPageStyles>
-      <span className="registerTitle">register</span>
+      <span className="registerTitle">Register</span>
       <form className="registerForm">
         <label>Username</label>
         <input
@@ -26,7 +27,12 @@ export default function RegisterPage() {
         />
         <button className="registerButton">Register</button>
       </form>
-      <button className="registerLoginButton">Login </button>
+      <button className="registerLoginButton">
+        {" "}
+        <Link className="link" to="/login">
+          Login
+        </Link>
+      </button>
     </RegisterPageStyles>
   );
 }

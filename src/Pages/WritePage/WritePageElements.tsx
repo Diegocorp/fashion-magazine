@@ -58,8 +58,9 @@ export const WritePageStyles = styled.div`
     background-color: teal;
     padding: 10px;
     border: none;
+    font-size: 20px;
+    width: 90px;
     border-radius: 10px;
     cursor: pointer;
-    font-size: 16px;
   }
 `;

@@ -1,5 +1,6 @@
 import React from "react";
 import { LoginPageStyles } from "./LoginPageElements";
+import { Link } from "react-router-dom";
 
 export default function LoginPage() {
   return (
@@ -20,7 +21,11 @@ export default function LoginPage() {
         />
         <button className="loginButton">Login</button>
       </form>
-      <button className="loginRegisterButton">Register </button>
+      <button className="loginRegisterButton">
+        <Link className="link" to="/register">
+          Register
+        </Link>
+      </button>
     </LoginPageStyles>
   );
 }
