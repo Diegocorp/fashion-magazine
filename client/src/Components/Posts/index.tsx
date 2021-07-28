@@ -1,20 +1,15 @@
-import React from "react";
+import React, { FC } from "react";
 import Post from "../Post";
 import { PostsStyles } from "./PostsElements";
 
-export default function Posts() {
+const Posts: FC<any> = ({ posts }) => {
   return (
     <PostsStyles>
-      <Post />
-      <Post />
-      <Post />
-      <Post />
-      <Post />
-      <Post />
-      <Post />
-      <Post />
-      <Post />
-      <Post />
+      {posts.map((p: any) => (
+        <Post post={p} />
+      ))}
     </PostsStyles>
   );
-}
+};
+
+export default Posts;

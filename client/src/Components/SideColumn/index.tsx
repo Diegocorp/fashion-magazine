@@ -1,7 +1,18 @@
-import React from "react";
+import axios from "axios";
+import React, { useEffect, useState } from "react";
 import { SideColumnStyles } from "./SideColumnElements";
 
 export default function SideColumn() {
+  const [categories, setCategories] = useState([]);
+
+  useEffect(() => {
+    const getCategories = async () => {
+      const res = await axios.get("/categories");
+      setCategories(res.data);
+    };
+    getCategories();
+  }, []);
+
   return (
     <SideColumnStyles>
       <div className="sideColumnItem">
@@ -19,10 +30,9 @@ export default function SideColumn() {
       <div className="sideColumnItem">
         <span className="sideColumnTitle">CATEGORIES</span>
         <ul className="sideColumnList">
-          <li className="sideColumnListItem">Life</li>
-          <li className="sideColumnListItem">Music</li>
-          <li className="sideColumnListItem">Style</li>
-          <li className="sideColumnListItem">Cinema</li>
+          {categories.map((c: any) => (
+            <li className="sideColumnListItem">{c.name}</li>
+          ))}
         </ul>
       </div>
       <div className="sideColumnItem">

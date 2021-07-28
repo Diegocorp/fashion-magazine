@@ -1,26 +1,29 @@
-import React from "react";
+import React, { FC } from "react";
 import { PostStyles } from "./PostElements";
+import { Link } from "react-router-dom";
 
-export default function Post() {
+const Post: FC<any> = ({ post }) => {
   return (
     <PostStyles>
-      <img className="postImg" src="https://i.imgur.com/nIo9zA1.jpg" />
+      {post.photo && <img className="postImg" src={post.photo} />}
+
       <div className="postInfo">
         <div className="postCategories">
-          <span className="postCategory">Music</span>
-          <span className="postCategory">Style</span>
+          {post.categories.map((c: any) => (
+            <span className="postCategory">c.name</span>
+          ))}
         </div>
-        <span className="postTitle">Lorem aliquip velit elit sit ipsum.</span>
+        <Link to={`./post/${post._id}`} className="link">
+          <span className="postTitle">{post.title}</span>
+        </Link>
         <hr />
-        <span className="postDate">1 hour ago</span>
+        <span className="postDate">
+          {new Date(post.createdAt).toDateString()}
+        </span>
       </div>
-      <p className="postDescription">
-        Duis minim adipisicing culpa ea exercitation enim proident eiusmod
-        occaecat. Laboris proident ullamco nulla eu est officia. Consectetur
-        officia et dolore quis adipisicing Lorem ea ut labore quis nulla dolor.
-        Lorem nulla anim quis amet occaecat ea velit laboris sunt qui sit eu
-        occaecat.
-      </p>
+      <p className="postDescription">{post.description}</p>
     </PostStyles>
   );
-}
+};
+
+export default Post;
